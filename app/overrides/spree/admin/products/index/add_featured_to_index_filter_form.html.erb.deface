@@ -1,0 +1,10 @@
+<!-- insert_bottom "[data-hook='admin_products_index_search']"
+  original "40f8d185d15e6b354a7b049b95fb56b4b85e34ff" -->
+<div class='col-md-6'>
+  <div class='field checkbox'>
+    <label>
+      <%= f.check_box :featured_true, {:checked => params[:q][:featured_true] == 't'}, 't' , '' %>
+      <%= Spree::Product.human_attribute_name(:featured) %>
+    </label>
+  </div>
+</div>

@@ -1,0 +1,8 @@
+<!-- insert_after "div[data-hook='admin_product_form_sku']"
+  original "fd07703b9d3d900dd61f57b9a3696c17a4443cb9" -->
+<div data-hook='admin_product_form_featured'>
+  <%= f.field_container :featured, class: ['form-group'] do %>
+    <%= f.check_box :featured %>
+    <%= f.label :featured %>
+  <% end %>
+</div

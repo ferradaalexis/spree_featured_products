@@ -1,0 +1,5 @@
+<!-- insert_before "[data-hook='admin_products_index_header_actions']"
+  original "1cf1e743e552f1fae35c0f3584123a8e3058e27d" -->
+<th>
+  <%= sort_link @search, :featured, Spree::Product.human_attribute_name(:featured), { default_order: 'desc' }, {title: 'admin_products_listing_featured_title'} %>
+</th>

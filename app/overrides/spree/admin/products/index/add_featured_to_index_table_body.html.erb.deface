@@ -1,0 +1,3 @@
+<!-- insert_before "[data-hook='admin_products_index_row_actions']"
+  original "b5262a1e289f4ccb3f368cb731d5a0607c5e1a94" -->
+<td><%= display_featured_icon(product) %></td>
