@@ -1,0 +1,3 @@
+set_attributes "[data-hook='admin_products_index_search'] .col-md-12"
+attributes class: 'col-md-6'
+original "fa79d6573d6c5cfde54c39c7a085841ba1ea84e6"
