@@ -5,8 +5,5 @@ Spree::HomeController.class_eval do
     @searcher = build_searcher(params.merge(include_images: true, search: search))
     @products = @searcher.retrieve_products
     @taxonomies = Spree::Taxonomy.includes(root: :children)
-
-    # Render index for simplicity. Create featured_products view if you need custom display
-    render :index
   end
 end
