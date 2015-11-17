@@ -1,7 +1,7 @@
 Spree Featured Products
 =====================
 
-This Spree extension allows you to mark products as featured and display them on frontend. It also has searcher support.
+This Spree extension allows you to mark products as featured and display them on frontend.
 
 Installation
 ------------
@@ -9,7 +9,7 @@ Installation
 Add spree_featured_products to your Gemfile:
 
 ```ruby
-gem 'spree_featured_products'
+gem 'spree_featured_products', branch: '3-0-stable'
 ```
 
 Bundle your dependencies and run the installation generator:
@@ -18,6 +18,14 @@ Bundle your dependencies and run the installation generator:
 bundle
 bundle exec rails g spree_featured_products:install
 ```
+
+Usage
+-------
+A `featured` boolean field is added to the `Spree::Product` model. Each product can be marked as featured on backend. You can also filter products by this field.
+
+A path to `/featured_products` is also added to see all featured products displayed on frontend.
+
+If you need to retrieve featured products for any customization, a `featured` scope is added to the `Spree::Product` model.
 
 Testing
 -------
