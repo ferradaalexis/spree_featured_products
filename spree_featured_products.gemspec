@@ -2,10 +2,10 @@
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_featured_products'
-  s.version     = '3.0.4'
+  s.version     = '3.4.0'
   s.summary     = 'Adds a featured option for products'
   s.description = 'Allows you to mark products as featured and display them on frontend'
-  s.required_ruby_version = '>= 2.2.1'
+  s.required_ruby_version = '~> 2.4.0'
 
   s.author    = ['Sebastián Vicencio']
   s.email     = ['sivicencio@gmail.com']
@@ -15,7 +15,7 @@ Gem::Specification.new do |s|
   s.require_path = 'lib'
   s.requirements << 'none'
 
-  s.add_dependency 'spree_core', '~> 3.0.4'
+  s.add_dependency 'spree_core', '~> 3.4.0'
 
   s.add_development_dependency 'capybara', '~> 2.4'
   s.add_development_dependency 'coffee-rails'
